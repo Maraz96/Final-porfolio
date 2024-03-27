@@ -1,0 +1,376 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* FUETE PRIMARIA: "Plus Jakarta Sans", sans-serif;
+FUENTE SECUNDARIA: "Inter Tight", sans-serif;
+COLOR PRINCIPAL rgb(31, 192, 138); 
+*/
+
+
+:root{
+    --ff-primary: "Plus Jakarta Sans", sans-serif;
+    --ff-secondary:"Inter Tight", sans-serif;
+    --color-uno: rgb(31, 192, 138); 
+    --color-dos:  rgb(117, 247, 203);
+    --color-fondo: #656D72; 
+}
+
+/* ..NORMALIZACION.. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+}
+
+/* ..REM.. */
+html{
+    font-size: 16px;
+}
+
+/* ..HEADER.. */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 60px;
+    top: 40px;
+}
+
+.logo{
+    color: #232E35;
+    ;
+    font-weight: 700;
+    display: flex;
+}
+
+.logo span{
+    color: var(--color-uno);
+}
+
+/*... HEADER NAV.. */
+header nav a{
+    text-decoration: none;
+    color: #232E35;
+    display: inline-block;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 56px;
+}
+
+nav a:hover{
+    opacity: 0.7;
+    color: var(--color-uno);
+}
+
+/*..BUTTONS.. */
+.btn-secundary{
+    color: black;
+    border: 1px solid #f1f1f1;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 1em 1.5em;
+    font-weight: 700px;
+    margin: 0 15px 0 15px;
+}
+
+.btn-secundary:hover{
+    transform: scale(1.4);
+    transition: all 400ms ease-in-out;
+    opacity: 0.7;
+    color: var(--color-uno);
+}
+
+.button .bi{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+/*..HERO.. */
+
+.hero{
+    display: flex;
+    padding: 10% 7vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: #FFFFFF;
+}
+
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-left h3{
+    font-family: var(--ff-secondary);
+    color: var(--color-fondo);
+    font-size: 12px;
+    text-align: left;
+    line-height: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 7.5px;
+}
+
+.hero-left p{
+    font-family: var(--ff-secondary);
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 538px;
+    height: 96px;
+    margin: 30px 0px 30px;
+    text-align: left;
+}
+
+.hero-left h1{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.hero-left span{
+    color: var(--color-uno);
+}
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img{
+    width: 255px;
+    height: 320px;
+    border-radius: 4px;
+}
+
+.bi{
+    font-size: 24px;
+    padding: 15px 10px 10px 1px;
+}
+
+/*..BOX..*/
+.box-conteiner{
+    position: relative;
+}
+
+.box-rotate{
+    position: absolute;
+    z-index: 1;
+    rotate: -10deg;
+    background-color: var(--color-uno);
+    width: 340px;
+    height: 398px;
+    border-radius: 10px;
+}
+
+.box{
+    display: flex;
+    width: 336px;
+    height: 400px;
+    z-index: 2;
+    background-color: var(--color-dos);
+    position: relative;
+    align-items: end;
+    border-radius: 10px;
+}
+
+/*...SERVICES... */
+
+
+section{
+    display: flex;
+    padding: 6rem 5rem;
+    background-color: #fbfbfb;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+section .conteiner span{
+    font-family: var(--ff-secondary);
+    color:var(--color-fondo);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 7.5px;
+}
+
+section .conteiner h2{
+    font-family: var(--color-uno);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.content .card{
+    width: 361px;
+    height: 294px;
+    background-color: #FFFFFF;
+    border: 1px ;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+section .content .card i{
+    color: var(--color-uno);
+    border-radius: 16px;
+    background-color: #F5F3FE;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+    margin-bottom: 1.5rem;
+}
+
+section .content .card h3{
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    font-size: 16px;
+    color: #232E35;
+    margin-bottom: 1rem;
+}
+
+section .content .card p{
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+    font-size: 14px;
+    width: 247px;
+    height: 72px;
+    text-align: center;
+    display: flex;
+    color: #232E35;
+}
+
+/*..CONTACT SECTION..*/
+
+.section-contact{
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    padding: 7%;
+    background-color: #FFFFFF;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    /*..CAJAS DE COTACTO */
+.contact-form input{
+    width: 600px;
+    height: 48px;
+    border: 1px solid #F5F3FE;
+    ;
+    border-radius: 8px;
+}
+
+.contact-form textarea{
+    border: 1px solid #F5F3FE;
+    ;
+    border-radius: 8px;
+}
+
+    /*..BOTON SEND..*/
+.section-contact button{
+    background-color: var(--color-uno);
+    color:#F5F3FE;
+    border-radius: 8px;
+    border: 1px;
+    width: 600px;
+    height: 49px;
+    padding: 16px 24px 16px 24px;
+}
+
+    /* ..INFORMACION DE CONTACTO.. */ 
+.info-datos h3{
+    font-family: var(--ff-secondary);
+    width: 64px;
+    height: 19px;
+}
+
+.info-datos{
+    display: flex;
+    gap: 10px;
+}
+
+.info-datos i{
+    background-color: #F5F3FE;
+    color:var(--color-uno);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+/* ..FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    /* width: 1434px;
+    height: 241px; */
+}
+
+.footer-cont h2{
+    font-size: 18px;
+    color: var(--color-fondo);
+}
+
+.social-redes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 192px;
+    height: 24px;
+    gap: 32px;
+    color: var(--color-fondo);
+}
+
+footer span{
+    font-family: var(--ff-secondary);
+    color:var(--color-fondo);
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px;
+}
+
+
+/* PROFE intente hacer la media queris pero no me quedo bien, 
+no logro entenderla; asique le envio mi trabajo hasta ahi.. Saludos */
